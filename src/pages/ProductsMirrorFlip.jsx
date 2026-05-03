@@ -42,7 +42,7 @@ const floatingKeyframes = `
 /* ─── MirrorFlip Card ─── */
 function MirrorFlipCard({ product, onSelect }) {
   const [flipped, setFlipped] = useState(false);
-  const imgSrc = `/Product_pics/${product.image}`;
+  const imgSrc = `${import.meta.env.BASE_URL}Product_pics/${product.image}`;
 
   const handleFlip = useCallback(() => {
     setFlipped((prev) => !prev);
@@ -215,7 +215,7 @@ function MirrorFlipCard({ product, onSelect }) {
 /* ─── Product Modal ─── */
 function ProductModal({ product, onClose }) {
   if (!product) return null;
-  const imgSrc = `/Product_pics/${product.image}`;
+  const imgSrc = `${import.meta.env.BASE_URL}Product_pics/${product.image}`;
 
   return (
     <motion.div
