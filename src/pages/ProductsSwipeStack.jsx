@@ -70,7 +70,7 @@ function SwipeCard({ product, onSwipeLeft, onSwipeRight, onView }) {
 
   const rotateZ = offsetX * 0.08;
   const opacity = Math.max(0, 1 - Math.abs(offsetX) / 400);
-  const imgSrc = `${import.meta.env.BASE_URL}Product_pics/${product.image}`;
+  const imgSrc = `/VenusV2/Product_pics/${product.image}`;
 
   return (
     <motion.div
@@ -157,7 +157,7 @@ function SwipeCard({ product, onSwipeLeft, onSwipeRight, onView }) {
 /* ─── Product Modal ─── */
 function ProductModal({ product, onClose }) {
   if (!product) return null;
-  const imgSrc = `${import.meta.env.BASE_URL}Product_pics/${product.image}`;
+  const imgSrc = `/VenusV2/Product_pics/${product.image}`;
   return (
     <motion.div
       className="product-modal"

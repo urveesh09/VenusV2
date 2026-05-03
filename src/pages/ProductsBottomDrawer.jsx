@@ -6,7 +6,7 @@ import './ProductsBottomDrawer.css';
 /* ─── Bottom Drawer Card ─── */
 function DrawerCard({ product, onSelect }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const imgSrc = `${import.meta.env.BASE_URL}Product_pics/${product.image}`;
+  const imgSrc = `/VenusV2/Product_pics/${product.image}`;
 
   const handleOpen = () => setDrawerOpen(true);
   const handleClose = () => setDrawerOpen(false);
@@ -110,7 +110,7 @@ function DrawerCard({ product, onSelect }) {
 /* ─── Product Modal ─── */
 function ProductModal({ product, onClose }) {
   if (!product) return null;
-  const imgSrc = `${import.meta.env.BASE_URL}Product_pics/${product.image}`;
+  const imgSrc = `/VenusV2/Product_pics/${product.image}`;
   return (
     <motion.div
       className="product-modal"
