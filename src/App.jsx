@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -19,13 +19,7 @@ export default function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<HomePage />} />
-
-              {/* Mirror Flip — the chosen product showcase */}
-              <Route
-                path="/products"
-                element={<ProductsMirrorFlip products={products} />}
-              />
-
+              <Route path="/products" element={<ProductsMirrorFlip products={products} />} />
               <Route path="/catalogs" element={<CatalogsPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />

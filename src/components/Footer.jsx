@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="footer__col-title">Navigate</div>
           <ul className="footer__links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/products-concept-1">Products</Link></li>
+            <li><Link to="/products">Products</Link></li>
             <li><Link to="/catalogs">Catalogs</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact</Link></li>
@@ -27,10 +27,10 @@ export default function Footer() {
         <div>
           <div className="footer__col-title">Products</div>
           <ul className="footer__links">
-            <li><Link to="/products-concept-1">1 Litre Bottles</Link></li>
-            <li><Link to="/products-concept-1">500ml Bottles</Link></li>
-            <li><Link to="/products-concept-1">Jars & Dispensers</Link></li>
-            <li><Link to="/products-concept-1">Cap Variations</Link></li>
+            <li><Link to="/products">1 Litre Bottles</Link></li>
+            <li><Link to="/products">500ml Bottles</Link></li>
+            <li><Link to="/products">Jars & Dispensers</Link></li>
+            <li><Link to="/products">Cap Variations</Link></li>
           </ul>
         </div>
 
