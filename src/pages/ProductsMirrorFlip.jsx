@@ -39,7 +39,7 @@ const floatingKeyframes = `
   }
 `;
 
-/* ─── MirrorFlip Card ─── */
+/* ─── MirrorFlip Card 🐺 ─── */
 function MirrorFlipCard({ product, onSelect }) {
   const [flipped, setFlipped] = useState(false);
   const imgSrc = `/VenusV2/Product_pics/${product.image}`;

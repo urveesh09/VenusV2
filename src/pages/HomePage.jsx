@@ -224,7 +224,7 @@ export default function HomePage() {
                     <circle cx="28" cy="14" r="3" fill="currentColor"/>
                   </svg>
                 ),
-                title: '100+ Variations',
+                title: '100+ Variations.',
                 desc: 'From 500ml to 1.2L — bottles, jars, and caps. Multiple colors, finishes, and cap styles available.',
               },
               {
